@@ -8,6 +8,10 @@ public class Post {
     private Integer likes;
     private Date creationDate;
 
+    public Post(){
+
+    }
+
     public Post(Long id, String text, Date date){
         this.id = id;
         this.text = text;

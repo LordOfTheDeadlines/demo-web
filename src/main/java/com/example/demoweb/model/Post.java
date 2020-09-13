@@ -9,10 +9,12 @@ public class Post {
 
     public Post(String text){
         this.text = text;
+        likes = 0;
     }
 
     public Post(String text, Date date){
         this.text = text;
+        likes = 0;
         creationDate=date;
     }
 

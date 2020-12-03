@@ -12,9 +12,10 @@ public class PostService {
     @Autowired
     PostRepository postRepository;
 
-    public void create(String text) {
+    public Post create(String text) {
         Post post = new Post(null, text, new Date());
         postRepository.save(post);
+        return post;
     }
 
     public Iterable<Post> listAllPosts() {

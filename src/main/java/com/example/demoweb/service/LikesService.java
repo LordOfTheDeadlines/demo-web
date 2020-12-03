@@ -15,4 +15,9 @@ public class LikesService {
         post.setLikes(post.getLikes() + 1);
         return post.getLikes();
     }
+    public Integer like(Post post){
+        post.setLikes(post.getLikes() + 1);
+        postRepository.save(post);
+        return post.getLikes();
+    }
 }

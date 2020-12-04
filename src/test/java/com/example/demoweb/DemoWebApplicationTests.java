@@ -49,5 +49,4 @@ public class DemoWebApplicationTests {
 				.andDo(print())
 				.andExpect(xpath(".//div[@class='content']/div").nodeCount(2));
 	}
-
 }

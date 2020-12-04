@@ -29,7 +29,7 @@ public class PostControllerTest {
     PostService postService;
 
     @Test
-    public void createPostTest() throws Exception{
+    public void createPostTest(){
         Post post =  postService.create("test-post");
         Mockito.verify(postRepository, Mockito.times(1)).save(post);
     }
